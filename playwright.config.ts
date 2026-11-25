@@ -44,10 +44,11 @@ export default defineConfig({
       testMatch: /.*stepik\.spec\.ts/,
     },
 
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+      testMatch: /.*demo\.spec\.ts/,
+    },
 
     // {
     //   name: 'webkit',
